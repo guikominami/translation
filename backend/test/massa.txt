@@ -1,0 +1,65 @@
+{
+  "name": "português - Portugal",
+  "acronym": "PT",
+}
+
+{
+  "name": "Xavante",
+  "acronym": "XA",
+  "family": "jê",
+  "root": "macro-jê",  
+  "country": "Brasil",
+  "region": "leste do Mato Grosso"
+}
+
+{
+  "name": "Kaingang",
+  "acronym": "KA",
+  "family": "jê",
+  "root": "macro-jê",  
+  "country": "Brasil", 
+  "region": "Rio Grande do Sul, Santa Catarina, Paraná e São Paulo"
+}
+
+{
+  "name": "Guajajara",
+  "acronym": "GJ",
+  "family": "tupi-guarani",
+  "root": "tupi",  
+  "country": "Brasil", 
+  "region": "Maranhão"
+}
+
+
+{
+  "name": "tupi-antigo",
+  "acronym": "tu",
+  "family": "tupi-guarani",
+  "root": "tupi",  
+  "country": "Brasil", 
+  "region": "Maranhão"
+}
+
+{
+  "name": "Paresi-haliti",
+  "acronym": "pa",
+  "family": "aruak",
+  "country": "Brasil", 
+}
+{
+  "name": "Apalaí",
+  "acronym": "ap",
+  "country": "Brasil"
+}
+
+palavras:
+
+{
+  "word": "doce",
+  "languageId": "67ab468cecc67eea2dd58923"
+}
+
+{
+	"wordId": "679dd2ec32c1ce7e48d5ac1c",   
+	"translationIds": ["679e38a83754c160fa241e69"]
+}

@@ -1,3 +1,4 @@
+const validateObjectId = require("../middleware/validateObjectId");
 const { Language, validate } = require("../models/language");
 const express = require("express");
 const router = express.Router();
@@ -25,7 +26,7 @@ router.post("/", async (req, res) => {
   res.send(language);
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", validateObjectId, async (req, res) => {
   const { error } = validate(req.body);
 
   if (error) return res.status(400).send(error.details[0].message);
@@ -47,7 +48,7 @@ router.put("/:id", async (req, res) => {
   res.send(language);
 });
 
-router.delete("/:id", async(req, res) => {
+router.delete("/:id", validateObjectId, async(req, res) => {
   const language = await Language.findByIdAndDelete(req.params.id);
   
   if (!language)

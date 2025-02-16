@@ -39,5 +39,8 @@
     "joi-objectid": "^4.0.2",
     "mongoose": "^8.10.0",
     "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4"
   }
 }

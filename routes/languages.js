@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   const { error } = validate(req.body);
 
-  if (error) return res.status(400).send({error: error.details[0].message});
+  if (error) return res.status(400).send({message: error.details[0].message});
 
   let language = new Language({
     name: req.body.name,
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
 router.put("/:id", validateObjectId, async (req, res) => {
   const { error } = validate(req.body);
 
-  if (error) return res.status(400).send(error.details[0].message);
+  if (error) return res.status(400).send({message: error.details[0].message});
 
   const language = await Language.findByIdAndUpdate(req.params.id, {
     name: req.body.name,
